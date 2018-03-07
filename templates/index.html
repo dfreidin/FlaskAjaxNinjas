@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+        <title>AJAX Ninjas</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </head>
+    <body>
+        <div id="turtle"></div>
+        <button id="red">red</button>
+        <button id="blue">blue</button>
+        <button id="orange">orange</button>
+        <button id="purple">purple</button>
+        <h4>Or choose a custom color:</h4>
+        <form>
+            <input id="color_txt" type="text" name="color">
+            <input type="submit" value="Enter">
+        </form>
+    </body>
+</html>
